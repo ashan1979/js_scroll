@@ -178,3 +178,59 @@ p {
 .section {
     padding-bottom: 5rem;
 }
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/*
+===================
+Scroll
+===================
+*/
+
+/* navbar */
+
+nav {
+    background: var(--clr-white);
+    padding: 1rem 1.5rem;
+}
+
+/* fixed-nav */
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+}
+
+.fixed-nav .links a {
+    color: var(--clr-secondary);
+}
+
+/* .fixed-nav .links-container {
+    height: auto !important;
+} */
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
