@@ -155,3 +155,26 @@ p {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
 }
+
+.btn:hover {
+    color: var(--clr-white);
+    background: var(--clr-black);
+}
+
+.btn-white {
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+    background: var(--clr-white);
+    color: var(--clr-secondary);
+}
+
+/* section */
+
+.section {
+    padding-bottom: 5rem;
+}
