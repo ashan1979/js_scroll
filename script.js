@@ -32,3 +32,27 @@ if (containerHeight === 0) {
 
 });
 
+// ************** fixed NavBar ******************
+
+const navbar = document.getElementById("nav");
+const topLink = document.querySelectorAll(".top-link")
+
+window.addEventListener("scroll", function () {
+    const scrollHeight = this.window.pageYOffset;
+    const navHeight = navbar.getBoundingClientRect().height;
+    if (scrollHeight > navHeight) {
+        navbar.classList.add(".fixed-nav");
+    } else {
+        navbar.classList.remove(".fixed-nav");
+    }
+    //setup back to top link
+
+    if (scrollHeight > 500) {
+        console.log("hello");
+
+        topLink.classList.add(".show-link");
+    } else {
+        topLink.classList.remove(".show-link")
+    }
+});
+
